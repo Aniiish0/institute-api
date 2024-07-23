@@ -1,0 +1,8 @@
+.idx/
+node_modules/
+dist/
+.gitignore
+package-lock.json
+yarn-lock.json
+.husky/
+.vscode/

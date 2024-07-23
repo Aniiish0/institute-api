@@ -1,0 +1,29 @@
+{
+  "name": "institute-api",
+  "description": "API server for project XYZ in Node",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**' --ext 'ts,json' --exec 'npm run build && npm run start'",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "setup": "npm i && npx husky install",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "author": "Google LLC",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^20.12.12",
+    "husky": "^8.0.3",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5"
+  }
+}
