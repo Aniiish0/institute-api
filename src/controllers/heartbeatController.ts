@@ -4,7 +4,7 @@ import {
   HeartbeatResponse,
 } from "../services/heartbeatService";
 
-@Route("heartbeat")
+@Route("health-check")
 export class HeartbeatController extends Controller {
   @Get()
   public async getHeartbeat(): Promise<HeartbeatResponse> {
